@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>设置 - Bilibili 动态提醒</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; margin: 0; padding: 16px; }
+      .row { margin-bottom: 12px; }
+      label { display: block; font-size: 14px; margin-bottom: 6px; color: #606266; }
+      select { width: 240px; padding: 8px; font-size: 14px; border: 1px solid #dcdfe6; border-radius: 6px; }
+      .status { margin-top: 8px; font-size: 12px; color: #909399; }
+
+      /* 暗色模式 */
+      @media (prefers-color-scheme: dark) {
+        body { background-color: #111827; color: #E5E7EB; }
+        label { color: #9CA3AF; }
+        select { background-color: #1F2937; color: #E5E7EB; border: 1px solid #374151; }
+        .status { color: #9CA3AF; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <label for="feedType">动态类型</label>
+      <select id="feedType">
+        <option value="all">全部（默认）</option>
+        <option value="video">视频投稿</option>
+        <option value="pgc">追番追剧</option>
+        <option value="article">专栏</option>
+      </select>
+      <div id="status" class="status">加载中…</div>
+    </div>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
