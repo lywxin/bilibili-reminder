@@ -77,23 +77,14 @@ flowchart TD
 ## 目录结构
 ```
 // Directory tree (3 levels)
-├── code
-│   ├── icons
-│   ├── manifest.json
-│   └── src
-│       ├── background.js
-│       ├── content.js
-│       ├── options.html
-│       └── options.js
-├── docs
-│   ├── PRD.md
-│   ├── Roadmap.md
-│   ├── User_Story_Map.md
-│   ├── Metrics_Framework.md
-│   └── Privacy_Policy.md
-└── license
-    ├── bilibili.crx
-    └── bilibili.pem
+
+├── icons
+├── manifest.json
+└── src
+    ├── background.js
+    ├── content.js
+    ├── options.html
+    └── options.js
 ```
 
 ## 开发指南
@@ -110,11 +101,7 @@ flowchart TD
 - 数字不更新？等待下一次 60s 刷新或手动点击图标（查看后会重置基线）。
 - 暗色模式未生效？确保系统或页面支持 `prefers-color-scheme`；内容脚本会在页面注入后写入 `dark_mode` 标识。
 
-## 路线图与文档
-- 产品需求文档（PRD）：`docs/PRD.md`
-- 路线图：`docs/Roadmap.md`
-- 用户故事地图：`docs/User_Story_Map.md`
-- 指标框架：`docs/Metrics_Framework.md`
+## 隐私权政策
 - 隐私权政策：`docs/Privacy_Policy.md`
 
 ## 贡献与致谢
