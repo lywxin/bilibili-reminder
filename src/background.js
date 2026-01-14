@@ -13,12 +13,14 @@ const BADGE_COLORS = {
   notAvailable: "#DADADA", // 浅灰（未登/不可用）
   error: "#FBD38D"         // 浅黄（异常）
 };
-// 徽标配色（暗色主题，提供更佳对比度）
+// 徽标配色（暗色主题：黑底白字）
+// 说明：Chrome/Chromium 会自动选择高对比的徽章文字颜色，
+// 在黑色背景下文本将呈现白色，实现“黑底白字”的效果。
 const BADGE_COLORS_DARK = {
-  default: "#2563EB",      // 深蓝（blue-600）
-  hasUpdates: "#EF4444",   // 红（red-500）
-  notAvailable: "#6B7280", // 灰（gray-500）
-  error: "#F59E0B"         // 橙（amber-500）
+  default: "#282828",      // 黑色背景（默认）
+  hasUpdates: "#282828",   // 黑色背景（有更新）
+  notAvailable: "#282828", // 黑色背景（未登录/不可用时显示 '!')
+  error: "#282828"         // 黑色背景（异常时显示 '!')
 };
 const STORAGE_KEYS = {
   FEED_TYPE: "feed_type",
