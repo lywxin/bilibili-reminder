@@ -66,7 +66,7 @@
 
 ## 目录结构
 ```
-// Directory tree (3 levels)
+// Directory tree (2 levels)
 
 ├── icons
 ├── manifest.json
