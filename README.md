@@ -80,7 +80,7 @@
 ## 开发指南
 - 技术栈：Chrome MV3、原生 JavaScript、`fetch` with credentials。
 - 快速开始：
-  - 直接修改 `code/src/*`，在 `chrome://extensions` 中点击“重新加载”应用变更。
+  - 直接修改 `src/*`，在 `chrome://extensions` 中点击“重新加载”应用变更。
   - 调试后台脚本：在扩展详情页打开 Service Worker 的“检查视图”。
   - 调试内容脚本：打开任一 B 站页面并打开 DevTools Console 查看日志。
 - 代码风格：推荐使用 JSDoc 风格函数注释与清晰的命名。
