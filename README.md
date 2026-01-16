@@ -92,7 +92,7 @@
 - 暗色模式未生效？确保系统或页面支持 `prefers-color-scheme`；内容脚本会在页面注入后写入 `dark_mode` 标识。
 
 ## 隐私权政策
-- 隐私权政策：`docs/Privacy_Policy.md`
+- 隐私权政策：`/Privacy_Policy.md`
 
 ## 贡献与致谢
 - 欢迎通过 Issue/PR 参与改进；建议从修复问题、优化性能与体验入手。
