@@ -36,18 +36,8 @@
 - 后台 Service Worker 周期调用 B 站 Polymer 动态接口：
   - `GET https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/all`（获取 `update_baseline`）
   - `GET https://api.bilibili.com/x/polymer/web-dynamic/v1/feed/all/update`（获取 `update_num`）
-- 内容脚本在 B 站页面内监听 `prefers-color-scheme`，将暗色模式标志写入本地存储以供徽章配色切换。
+- 内容脚本监听 `prefers-color-scheme`，将暗色模式标志写入本地存储以供徽章配色切换。
 - 通过 `chrome.storage.local` 保存必要状态（类型偏好、基线、暗色标志），不上传服务器、不跨设备同步。
-
-```mermaid
-flowchart TD
-  A[后台 Service Worker] --> B[读取类型与暗色标志]
-  A --> C[获取 update_baseline]
-  A --> D[获取 update_num]
-  A --> E[设置徽章文本与配色]
-  F[图标点击] -->|打开| G[t.bilibili.com/?tab=<type>]
-  G --> H[查看后重置基线]
-```
 
 ## 权限说明
 | 权限 | 用途 | 说明 |
